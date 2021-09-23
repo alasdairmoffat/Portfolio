@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable global-require */
+/* eslint-disable react/prop-types */
 import { useEffect } from 'react';
 import { Provider } from 'react-redux';
 
