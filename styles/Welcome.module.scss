@@ -1,0 +1,14 @@
+@import "config.scss";
+
+.welcome {
+  min-height: calc(100vh - #{$nav-height} + 8px);
+
+  .welcome-text {
+    margin-top: 10%;
+
+    .welcome-title {
+      font-size: 6rem;
+      font-family: "Cabin", Tahoma, sans-serif;
+    }
+  }
+}

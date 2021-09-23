@@ -1,0 +1,87 @@
+@import "../node_modules/materialize-css/sass/components/color-variables";
+
+@import "config";
+
+@mixin nav-border($border-position) {
+  border-#{$border-position}: color("grey", "darken-3") solid $nav-border-width;
+}
+
+@mixin nav-hover($border-position) {
+  background-color: $primary-color;
+  border-#{$border-position}: color("grey", "lighten-4") solid $nav-hover-border-width;
+  font-size: 1.2em;
+}
+
+.navlist {
+  .navbar-button {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 0.5em;
+    }
+  }
+
+  &.center {
+    .navbar-button {
+      justify-content: center;
+    }
+  }
+}
+
+.logo {
+  padding: 0 10px;
+  height: calc(100% - #{$nav-border-width});
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  height: $nav-height;
+  @include nav-border(bottom);
+
+  .sidenav-trigger {
+    margin-left: 0;
+
+    .sidenav-icon {
+      margin: 0;
+      padding: 0 18px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  a {
+    height: calc(#{$nav-height - $nav-border-width});
+
+    &:hover,
+    &:focus {
+      @include nav-hover(bottom);
+    }
+  }
+
+  li > a {
+    min-width: 141px;
+    @include nav-border(left);
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+}
+
+.sidenav {
+  width: 15rem;
+  @include nav-border(right);
+
+  li > a {
+    @include nav-border(bottom);
+
+    &:hover,
+    &:focus {
+      @include nav-hover(right);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.action-btn {
+  display: block;
+
+  &.mb {
+    margin-bottom: 4px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+    transition: opacity 0.4s ease-out;
+  }
+
+  svg {
+    margin-left: 1rem;
+  }
+}

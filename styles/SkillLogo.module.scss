@@ -1,0 +1,23 @@
+.skill-logo {
+  margin-bottom: 1rem;
+
+  .img-container {
+    width: 100%;
+    // makes square
+    padding-bottom: 100%;
+    // for positioning children
+    position: relative;
+
+    .skills-logo {
+      max-width: 100%;
+      height: auto;
+      padding-bottom: 10px;
+
+      // center within container
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
