@@ -6,10 +6,6 @@
   overflow: hidden;
   font-size: 16px;
 
-  // Account for image not fully covering area
-  z-index: -2;
-  background-color: #000;
-
   &.darken {
     // darken background image
     &:after {

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import PropTypes from 'prop-types';
 
 import skillLogoStyles from '../styles/SkillLogo.module.scss';
@@ -5,7 +6,7 @@ import skillLogoStyles from '../styles/SkillLogo.module.scss';
 const SkillLogo = ({ src, name }) => (
   <div className={`${skillLogoStyles['skill-logo']} col s4 m2`}>
     <div className={skillLogoStyles['img-container']}>
-      <img src={src} alt={`${name} Logo`} className={skillLogoStyles['skills-logo']} />
+      <Image src={src} layout="fill" objectFit="contain" alt={`${name} Logo`} />
     </div>
     <span>{name}</span>
   </div>
