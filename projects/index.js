@@ -18,7 +18,7 @@ export default [
     ],
     image: 'giantbomb-downloader.png',
     filters: ['Backend', 'Python', 'SQLite'],
-    url: 'https://raw.githubusercontent.com/alasdairmoffat/Giant-Bomb-Downloader/master/gb_dl.py?token=AMMODFKYLPMMMGNBNCFZP2S7QXOWW',
+    url: 'https://github.com/alasdairmoffat/Giant-Bomb-Downloader',
     repository: 'https://github.com/alasdairmoffat/Giant-Bomb-Downloader',
   },
   {
