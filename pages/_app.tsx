@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable global-require */
-/* eslint-disable react/prop-types */
+import { AppProps } from 'next/app';
 import { useEffect } from 'react';
 import { Provider } from 'react-redux';
 
@@ -8,7 +8,7 @@ import store from '../store';
 
 import '../styles/globals.scss';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const SmoothScroll = require('smooth-scroll');
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
       // offset param ensures we scroll to the top of the margin rather than text of section title
       SmoothScroll('a[href*="#"]', {
         speed: 200,
-        offset: (anchor) => (anchor.id === 'welcome' ? 2000 : 40),
+        offset: (anchor: Element) => (anchor.id === 'welcome' ? 2000 : 40),
       });
 
       const M = require('materialize-css');
