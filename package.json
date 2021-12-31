@@ -25,6 +25,7 @@
   "devDependencies": {
     "@next/eslint-plugin-next": "^11.1.2",
     "@types/materialize-css": "^1.0.11",
+    "@types/redux": "^3.6.0",
     "@types/smooth-scroll": "^16.1.1",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
